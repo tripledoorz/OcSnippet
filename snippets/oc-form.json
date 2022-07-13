@@ -1,0 +1,103 @@
+{
+    "wrapper": {
+        "prefix": "$(custom-icon) oc-form wrapper",
+        "body": "<wrapper></wrapper>",
+        "description": "oc-form 页面template的根标签"
+    },
+    "base-dialog": {
+        "prefix": "$(custom-icon) oc-form base-dialog",
+        "body": "<base-dialog :visible.sync=\"dialogVisible$1\" :title=\"'示例$2'\">",
+        "description": "oc-form Dialog 对话框组件"
+    },
+    "base-drawer": {
+        "prefix": "$(custom-icon) oc-form base-drawer",
+        "body": [
+            "<base-drawer :visible.sync=\"drawerFlag\" :title=\"'示例'\" @closeDrawer=\"handleClose\">",
+            "\t<div style=\"padding:15px;\">$1write your anycode here~</div>",
+            "</base-drawer>"
+        ],
+        "description": "oc-form Drawer 抽屉组件"
+    },
+    "base-submit-bar": {
+        "prefix": "$(custom-icon) oc-form base-submitBar",
+        "body": "<BaseSubmitBar @handleSubmitAction=\"handleSubmit\" @handleCancelAction=\"handleClose\"/>",
+        "description": "oc-form 提交表单组件。提交：@handleSubmitAction；取消：@handleCancelAction"
+    },
+    "base-table": {
+        "prefix": "$(custom-icon) oc-form base-table",
+        "body": [
+            "<base-table",
+            "\t:showLoading=\"showLoading\"",
+            "\t:column.sync=\"mainColumn\"",
+            "\t:data=\"mainData\"",
+            "\t:pagination.sync=\"pagination\"",
+            "\t@handleChange=\"getTableList\"",
+            "\t@handleAction=\"handleAction\"",
+            "\t>",
+            "\t<template v-slot:action>",
+            "\t\t<el-button type=\"primary\" @click=\"openModal\">打开标签框示例</el-button>",
+            "\t</template>",
+            "</base-table>"
+        ],
+        "description": "oc-form 基础表格组件"
+    },
+    "checkbox-select": {
+        "prefix": "$(custom-icon) oc-form checkbox-select",
+        "body": "<checkbox-select></checkbox-select>$3",
+        "description": "oc-form 含Checkbox的下拉多选框"
+    },
+    "custom-cascader": {
+        "prefix": "$(custom-icon) oc-form custom-cascader",
+        "body": "<custom-cascader></custom-cascader>$3",
+        "description": "oc-form 自定义级联组件"
+    },
+    "power-form": {
+        "prefix": "$(custom-icon) oc-form power-form",
+        "body": [
+            "<power-form",
+            "\tref=\"dialogForm\"",
+            "\t:config=\"rocketConfig\"",
+            "\t@handleClose=\"handleClose()\"",
+            "\tv-model=\"userInfo\"",
+            "></power-form>"
+        ],
+        "description": "oc-form 超级表单组件"
+    },
+    "query-form": {
+        "prefix": "$(custom-icon) oc-form query-form",
+        "body": [
+            "<query-form",
+            "\t:form=\"form\"",
+            "\t:model.sync=\"queryForm\"",
+            "\t@handleQuery=\"getTableList\"",
+            "/>"
+        ],
+        "description": "oc-form 表单查询组件"
+    },
+    "eventDirection": {
+        "prefix": "$(custom-icon) oc-form eventDirection",
+        "body": [
+            "<EventDirection",
+            "\t:ext=\"ext\"",
+            "\t:formHead=\"[]\"",
+            "\t:event-config-data=\"eventConfigData\"",
+			"\tref=\"eventDirection\"",
+            "/>"
+        ],
+        "description": "oc-form 事件业务组件"
+    },
+    "bidding": {
+        "prefix": "$(custom-icon) oc-form bidding",
+        "body": [
+            "<Bidding",
+            "\t:ext=\"ext\"",
+            "\t:isEdit=\"true\"",
+            "\t:mediaInfo=\"mediaInfo\"",
+            "\t:form=\"13\"",
+            "\t:adSourceIdToNameMap=\"adSourceIdToNameMap\"",
+			"\tref=\"adBidding\"",
+            "/>"
+        ],
+        "description": "oc-form Bidding广告位顺序配置组件"
+    }
+}
