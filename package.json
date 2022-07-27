@@ -2,7 +2,7 @@
 	"name": "OcSnippet",
 	"displayName": "OcSnippet",
 	"description": "OcForm及vue相关snippet",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"icon": "assets/logo.png",
 	"publisher": "OcPlug",
 	"engines": {
@@ -79,6 +79,14 @@
 			{
 			  "language": "typescript",
 			  "path": "./snippets/vue-script-router.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/oc-templatejson"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/oc-template.json"
 			}
 		],
 		"icons": {

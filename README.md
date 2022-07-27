@@ -1,5 +1,5 @@
 # OcSnippet
-> ocform基础组件、业务组件、vueSnippets、基础模板
+> ocform基础组件、业务组件、vueSnippets、基础模板、高级模板
 
 # Snippets
 ![](https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/vue-snippet-hero.gif)
@@ -182,4 +182,9 @@ _Versions Supported: Vue 2 and Vue 3_
 | `gitignore` | .gitignore file presets |
 
 ## 模板
--- 计划 v0.2.0版本更新
+| Snippet     | Purpose                 |
+| ----------- | ----------------------- |
+| oct1 | oc-form模板一（基础搜索+表单+DialogQuery） |
+| oct2 | oc-form模板二（基础搜索+基础表单+抽屉）|
+| oct3 | oc-form模板三（基础表单） |
+| oct4 | oc-form模板四（高级表单） |
